@@ -12,12 +12,20 @@ public class PropertyManager : MonoBehaviour
     public int index;
     public int ownerIndex;
     //Later we will add a function to get all of the players who are in the game inside this list.
-    [HideInInspector] public List<PlayerMoney> Players = new List<PlayerMoney>();
-    public static GameObject buyPrompt, Auctionprompt;
+    [HideInInspector] public List<Player> Players = new List<Player>();
+    public static GameObject buyPrompt, Auctionprompt, RentPrompt;
 
     private void Awake()
     {
-        //Players = FindObjectsOfType<PlayerMoney>();
+        buyPrompt = GameObject.Find("buyPrompt");
+        buyPrompt.SetActive(false);
+        Auctionprompt = GameObject.Find("AuctionPrompt");
+        Auctionprompt.SetActive(false);
+        RentPrompt = GameObject.Find("RentPrompt");
+        RentPrompt.SetActive(false);
+
+
+        Players.Add(FindObjectOfType<Player>());
         for (int i = 0; i < Players.Count; i++)
         {
             Players[i].playerIndex = ownerIndex;
@@ -25,17 +33,7 @@ public class PropertyManager : MonoBehaviour
     }
 
 
-    //after checking the status of ownership on properteis, This function will help the player to buy it.
-    public void Buy(int playIndex)
-    {
-        Players[playIndex].Money -= price;
-        ownerIndex = Players[playIndex].playerIndex;
-        isBought = true;
-        Players[playIndex].ownedProperty.Add(index);
 
-
-
-    }
     //This function is for checking the status of the property
     public bool GetStatus()
     {

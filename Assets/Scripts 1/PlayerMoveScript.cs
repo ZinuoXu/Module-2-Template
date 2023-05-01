@@ -12,8 +12,10 @@ public class PlayerMoveScript : MonoBehaviour
  
     public void OnRoll()
     {
-        steps += dice1.GetDiceValue()
-            + dice2.GetDiceValue();
+        steps += dice1.GetDiceValue();
+        //
+        //
+        //steps += dice2.GetDiceValue();
         StartCoroutine(Move());
     }
  
