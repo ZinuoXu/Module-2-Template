@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 115809750}
   - component: {fileID: 115809749}
   - component: {fileID: 115809752}
+  - component: {fileID: 115809753}
   m_Layer: 0
   m_Name: StartNode (1)
   m_TagString: Untagged
@@ -311,6 +312,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &115809753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115809747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Med Ave
+  Description: 
+  price: 60
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &120197244
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +347,7 @@ GameObject:
   - component: {fileID: 120197247}
   - component: {fileID: 120197246}
   - component: {fileID: 120197249}
+  - component: {fileID: 120197250}
   m_Layer: 0
   m_Name: StartNode (39)
   m_TagString: Untagged
@@ -422,6 +446,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0, y: 1, z: 0.00000023841858}
+--- !u!114 &120197250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Marvin Gardens
+  Description: 
+  price: 280
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &120399028
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +626,26 @@ MonoBehaviour:
   steps: 0
   dice1: {fileID: 2124999814}
   dice2: {fileID: 814012026}
+--- !u!4 &164418052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977474668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &164418053
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164418048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8286845413512478512, guid: 65e4e154b54a84bbfaa65753fd45dc47, type: 3}
 --- !u!1 &225436033
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +659,7 @@ GameObject:
   - component: {fileID: 225436036}
   - component: {fileID: 225436035}
   - component: {fileID: 225436038}
+  - component: {fileID: 225436039}
   m_Layer: 0
   m_Name: StartNode (18)
   m_TagString: Untagged
@@ -691,6 +758,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0.00000023841858}
+--- !u!114 &225436039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225436033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tennessee Ave
+  Description: 
+  price: 180
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &236386803
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +928,7 @@ GameObject:
   - component: {fileID: 254948908}
   - component: {fileID: 254948907}
   - component: {fileID: 254948910}
+  - component: {fileID: 254948911}
   m_Layer: 0
   m_Name: StartNode (27)
   m_TagString: Untagged
@@ -937,6 +1027,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &254948911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254948905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ventnor Ave
+  Description: 
+  price: 260
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &291080920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1284,7 @@ GameObject:
   - component: {fileID: 356982361}
   - component: {fileID: 356982360}
   - component: {fileID: 356982363}
+  - component: {fileID: 356982364}
   m_Layer: 0
   m_Name: StartNode (36)
   m_TagString: Untagged
@@ -1270,6 +1383,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &356982364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356982358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Park Place
+  Description: 
+  price: 350
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &366893641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1418,7 @@ GameObject:
   - component: {fileID: 366893644}
   - component: {fileID: 366893643}
   - component: {fileID: 366893646}
+  - component: {fileID: 366893647}
   m_Layer: 0
   m_Name: StartNode (21)
   m_TagString: Untagged
@@ -1381,6 +1517,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: -0.00000047683716, y: 1, z: 0.00000023841858}
+--- !u!114 &366893647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366893641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Kentucky Ave
+  Description: 
+  price: 220
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &383948582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1842,7 @@ GameObject:
   - component: {fileID: 507589823}
   - component: {fileID: 507589822}
   - component: {fileID: 507589825}
+  - component: {fileID: 507589826}
   m_Layer: 0
   m_Name: StartNode (3)
   m_TagString: Untagged
@@ -1782,6 +1941,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &507589826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507589820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Baltic Ave
+  Description: 
+  price: 60
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
+--- !u!1 &550228347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550228348}
+  m_Layer: 0
+  m_Name: vv
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &550228348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550228347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.196, y: 0.1005464, z: 5.196}
+  m_LocalScale: {x: 1.5798085, y: 0.23182002, z: 1.5495361}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 164418052}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618003395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2230,7 @@ GameObject:
   - component: {fileID: 672585258}
   - component: {fileID: 672585257}
   - component: {fileID: 672585260}
+  - component: {fileID: 672585261}
   m_Layer: 0
   m_Name: StartNode (13)
   m_TagString: Untagged
@@ -2115,6 +2329,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: -0.00000023841858, y: 1, z: 0.00000023841858}
+--- !u!114 &672585261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672585255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: States Ave
+  Description: 
+  price: 140
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &694686471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,6 +2646,7 @@ GameObject:
   - component: {fileID: 778049622}
   - component: {fileID: 778049621}
   - component: {fileID: 778049624}
+  - component: {fileID: 778049625}
   m_Layer: 0
   m_Name: StartNode (24)
   m_TagString: Untagged
@@ -2508,6 +2745,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &778049625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778049619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Illinois Ave
+  Description: 
+  price: 240
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &796482714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2780,7 @@ GameObject:
   - component: {fileID: 796482717}
   - component: {fileID: 796482716}
   - component: {fileID: 796482719}
+  - component: {fileID: 796482720}
   m_Layer: 0
   m_Name: StartNode (38)
   m_TagString: Untagged
@@ -2619,6 +2879,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0.00000047683716, y: 1, z: 0}
+--- !u!114 &796482720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796482714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Boardwalk
+  Description: 
+  price: 400
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &814012025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fe5030a156cb046ca9c516aad1627559,
@@ -2695,6 +2977,7 @@ GameObject:
   - component: {fileID: 821944523}
   - component: {fileID: 821944522}
   - component: {fileID: 821944525}
+  - component: {fileID: 821944526}
   m_Layer: 0
   m_Name: StartNode (23)
   m_TagString: Untagged
@@ -2793,6 +3076,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: -0.00000023841858, y: 1, z: 0.00000023841858}
+--- !u!114 &821944526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821944520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Indiana Ave
+  Description: 
+  price: 220
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1001 &848490896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2958,6 +3263,7 @@ GameObject:
   - component: {fileID: 881176876}
   - component: {fileID: 881176875}
   - component: {fileID: 881176878}
+  - component: {fileID: 881176879}
   m_Layer: 0
   m_Name: StartNode (26)
   m_TagString: Untagged
@@ -3056,6 +3362,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0.00000011920929, y: 1, z: 0.00000023841858}
+--- !u!114 &881176879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881176873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Atlantic Ave
+  Description: 
+  price: 260
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +4140,7 @@ GameObject:
   - component: {fileID: 1118769783}
   - component: {fileID: 1118769782}
   - component: {fileID: 1118769785}
+  - component: {fileID: 1118769786}
   m_Layer: 0
   m_Name: StartNode (16)
   m_TagString: Untagged
@@ -3910,6 +4239,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0.00000011920929, y: 1, z: 0.00000023841858}
+--- !u!114 &1118769786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118769780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: St. James Place
+  Description: 
+  price: 180
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1127758742
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,7 +5632,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603102797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5476,6 +5827,7 @@ GameObject:
   - component: {fileID: 1651316530}
   - component: {fileID: 1651316529}
   - component: {fileID: 1651316532}
+  - component: {fileID: 1651316533}
   m_Layer: 0
   m_Name: StartNode (8)
   m_TagString: Untagged
@@ -5574,6 +5926,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1651316533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651316527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Vermont Ave
+  Description: 
+  price: 100
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1651350362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,6 +5961,7 @@ GameObject:
   - component: {fileID: 1651350365}
   - component: {fileID: 1651350364}
   - component: {fileID: 1651350367}
+  - component: {fileID: 1651350368}
   m_Layer: 0
   m_Name: StartNode (33)
   m_TagString: Untagged
@@ -5685,6 +6060,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1651350368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651350362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pennsylvania Ave
+  Description: 
+  price: 320
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1677458997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5920,6 +6317,7 @@ GameObject:
   - component: {fileID: 1685464614}
   - component: {fileID: 1685464613}
   - component: {fileID: 1685464616}
+  - component: {fileID: 1685464617}
   m_Layer: 0
   m_Name: StartNode (19)
   m_TagString: Untagged
@@ -6018,6 +6416,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0.00000047683716, y: 1, z: 0.00000023841858}
+--- !u!114 &1685464617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685464611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: New York Ave
+  Description: 
+  price: 200
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1705831331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6031,6 +6451,7 @@ GameObject:
   - component: {fileID: 1705831334}
   - component: {fileID: 1705831333}
   - component: {fileID: 1705831336}
+  - component: {fileID: 1705831337}
   m_Layer: 0
   m_Name: StartNode (14)
   m_TagString: Untagged
@@ -6129,6 +6550,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: -0.00000011920929, y: 1, z: 0.00000023841858}
+--- !u!114 &1705831337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705831331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Virginia Ave
+  Description: 
+  price: 160
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1730558332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +6721,7 @@ GameObject:
   - component: {fileID: 1781728138}
   - component: {fileID: 1781728137}
   - component: {fileID: 1781728140}
+  - component: {fileID: 1781728141}
   m_Layer: 0
   m_Name: StartNode (31)
   m_TagString: Untagged
@@ -6376,6 +6820,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1781728141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781728135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: North Carolina ave
+  Description: 
+  price: 300
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1784810401
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,6 +6855,7 @@ GameObject:
   - component: {fileID: 1784810404}
   - component: {fileID: 1784810403}
   - component: {fileID: 1784810406}
+  - component: {fileID: 1784810407}
   m_Layer: 0
   m_Name: StartNode (31)
   m_TagString: Untagged
@@ -6487,6 +6954,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1784810407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784810401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pacific Ave
+  Description: 
+  price: 300
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1787100791
 GameObject:
   m_ObjectHideFlags: 0
@@ -6901,6 +7390,7 @@ GameObject:
   - component: {fileID: 1850243105}
   - component: {fileID: 1850243104}
   - component: {fileID: 1850243107}
+  - component: {fileID: 1850243108}
   m_Layer: 0
   m_Name: StartNode (11)
   m_TagString: Untagged
@@ -6999,6 +7489,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: -0.00000047683716, y: 1, z: 0.00000023841858}
+--- !u!114 &1850243108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850243102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: St. Charles Place
+  Description: 
+  price: 140
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1912746969
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,6 +7524,7 @@ GameObject:
   - component: {fileID: 1912746972}
   - component: {fileID: 1912746971}
   - component: {fileID: 1912746974}
+  - component: {fileID: 1912746975}
   m_Layer: 0
   m_Name: StartNode (9)
   m_TagString: Untagged
@@ -7110,6 +7623,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0.00000047683716, y: 1, z: 0}
+--- !u!114 &1912746975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912746969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Connecticut Ave
+  Description: 
+  price: 120
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &1970738213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7294,27 +7829,42 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 550228348}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.1649404
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.226772
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 21.568455
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.704671
+      value: 0.207
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.322439
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
@@ -7329,7 +7879,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65e4e154b54a84bbfaa65753fd45dc47,
         type: 3}
@@ -7381,6 +7931,7 @@ GameObject:
   - component: {fileID: 2021153480}
   - component: {fileID: 2021153479}
   - component: {fileID: 2021153482}
+  - component: {fileID: 2021153483}
   m_Layer: 0
   m_Name: StartNode (6)
   m_TagString: Untagged
@@ -7479,6 +8030,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2021153483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021153477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdef5c3f59483ea9390efac088823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Oriental Ave
+  Description: 
+  price: 100
+  isBought: 0
+  index: 0
+  ownerIndex: 0
+  Players: []
+  isGpBought: 0
+  Rent: 0
+  numHouses: 0
 --- !u!1 &2038462854
 GameObject:
   m_ObjectHideFlags: 0

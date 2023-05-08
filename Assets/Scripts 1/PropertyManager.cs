@@ -17,19 +17,15 @@ public class PropertyManager : MonoBehaviour
 
     private void Awake()
     {
-        buyPrompt = GameObject.Find("buyPrompt");
-        buyPrompt.SetActive(false);
-        Auctionprompt = GameObject.Find("AuctionPrompt");
-        Auctionprompt.SetActive(false);
-        RentPrompt = GameObject.Find("RentPrompt");
-        RentPrompt.SetActive(false);
+        //buyPrompt = GameObject.Find("buyPrompt");
+        //buyPrompt.SetActive(false);
+        //Auctionprompt = GameObject.Find("AuctionPrompt");
+        //Auctionprompt.SetActive(false);
+        //RentPrompt = GameObject.Find("RentPrompt");
+        //RentPrompt.SetActive(false);
 
 
         Players.Add(FindObjectOfType<Player>());
-        for (int i = 0; i < Players.Count; i++)
-        {
-            Players[i].playerIndex = ownerIndex;
-        }
     }
 
 

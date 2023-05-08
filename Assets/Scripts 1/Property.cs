@@ -21,16 +21,14 @@ public class Property : PropertyManager
         ownerIndex = Players[playIndex].playerIndex;
         isBought = true;
         Players[playIndex].ownedProperty.Add(this);
-
-
-
     }
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         int index = other.GetComponent<Player>().playerIndex;
+        Debug.Log($"Player {index} is on the property");
         if (other.tag == "Player")
         {
-
+            Debug.Log($"Name: {name}, Description: {Description}");
             if (isBought)
             {
                 //Deduct from player index and give to the owner

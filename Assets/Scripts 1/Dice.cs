@@ -1,34 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
- 
+
 public class Dice : MonoBehaviour
 {
     Rigidbody rb;
- 
+
     [SerializeField] public bool hasLanded, thrown;
-    public PlayerMoveScript plMove;
- 
- 
+    public PlayerMove plMove;
+    GameManager manager;
+
     Vector3 initPosition;
- 
-     int diceValue;
+
+    int diceValue;
     public DiceSide[] diceSides = new DiceSide[6];
- 
+
     public int GetDiceValue()
     {
         return diceValue;
     }
- 
- 
- 
+
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         initPosition = transform.position;
         rb.useGravity = false;
     }
- 
+
     public void OnClick()
     {
         RollDice();
@@ -40,28 +42,28 @@ public class Dice : MonoBehaviour
             hasLanded = true;
             rb.useGravity = false;
             DiceValueCheck();
- 
+
         }
         else if (rb.IsSleeping() && hasLanded && diceValue == 0)
         {
             RollAgain();
         }
     }
- 
+
     void RollDice()
     {
-        if(!thrown && !hasLanded)
+        if (!thrown && !hasLanded)
         {
             thrown = true;
             rb.useGravity = true;
             rb.AddTorque(Random.Range(0, 500), Random.Range(0, 500), Random.Range(0, 500));
         }
-        else if(thrown && hasLanded)
+        else if (thrown && hasLanded)
         {
             Reset();
         }
     }
- 
+
     private void Reset()
     {
         transform.position = initPosition;
@@ -71,26 +73,26 @@ public class Dice : MonoBehaviour
     }
     private void RollAgain()
     {
- 
+
         Reset();
         thrown = true;
         rb.useGravity = true;
         rb.AddTorque(Random.Range(0, 500), Random.Range(0, 500), Random.Range(0, 500));
- 
- 
+
+
     }
- 
+
     void DiceValueCheck()
     {
-        diceValue= 0;
-        foreach(DiceSide side in diceSides)
+        diceValue = 0;
+        foreach (DiceSide side in diceSides)
         {
-            if(side.OnGround())
+            if (side.OnGround())
             {
                 diceValue = side.sideValue;
                 Debug.Log(diceValue + " has been rolled");
-                plMove.OnRoll();
-                Reset(); 
+                manager.playerList[manager.currentPlayerIndex].OnRoll();
+                Reset();
             }
         }
     }
