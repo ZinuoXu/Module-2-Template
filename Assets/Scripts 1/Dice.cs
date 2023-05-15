@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class Dice : MonoBehaviour
@@ -9,8 +7,8 @@ public class Dice : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField] public bool hasLanded, thrown;
-    public PlayerMove plMove;
-    GameManager manager;
+    public PlayerMove currentPL;
+    public GameManager manager;
 
     Vector3 initPosition;
 
@@ -29,6 +27,7 @@ public class Dice : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         initPosition = transform.position;
         rb.useGravity = false;
+        currentPL = manager.playerList[manager.currentPlayerIndex];
     }
 
     public void OnClick()
@@ -91,7 +90,7 @@ public class Dice : MonoBehaviour
             {
                 diceValue = side.sideValue;
                 Debug.Log(diceValue + " has been rolled");
-                manager.playerList[manager.currentPlayerIndex].OnRoll();
+                manager.playerList[manager.currentPlayerIndex].GetComponent<PlayerMove>().OnRoll();
                 Reset();
             }
         }
