@@ -5,15 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int currentPlayerIndex;
-    public List<PlayerMove> playerList;
+    public GameObject[] playerList;
 
-    private void Start()
+    private void Awake()
     {
-        PlayerMove[] Players = FindObjectsOfType<PlayerMove>();
-        foreach (PlayerMove p in Players)
-        {
-            playerList.Add(p);
-        }
+        playerList = GameObject.FindGameObjectsWithTag("Player");
         currentPlayerIndex = 0;
     }
     //For each dice roll after the steps for the player is <= 0
@@ -21,7 +17,7 @@ public class GameManager : MonoBehaviour
     //do whatever with the property they have landed on, it would be time to shift turns
     public void ChangeTurn(int index)
     {
-        PlayerMove currentPlayer = playerList[currentPlayerIndex];
+        Player currentPlayer = playerList[currentPlayerIndex].GetComponent<Player>();
         if (currentPlayer.steps <= 0 && !currentPlayer.isMoving)
         {
             if (currentPlayerIndex <= 3)
@@ -30,7 +26,7 @@ public class GameManager : MonoBehaviour
                 currentPlayerIndex = 0;
             currentPlayer.isTurn = false;
 
-            playerList[currentPlayerIndex].isTurn = true;
+            playerList[currentPlayerIndex].GetComponent<Player>().isTurn = true;
         }
         Debug.Log($"It's player {currentPlayerIndex}'s turn");
     }

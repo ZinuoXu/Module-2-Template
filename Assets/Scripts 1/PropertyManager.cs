@@ -12,20 +12,24 @@ public class PropertyManager : MonoBehaviour
     public int index;
     public int ownerIndex;
     //Later we will add a function to get all of the players who are in the game inside this list.
-    [HideInInspector] public List<Player> Players = new List<Player>();
-    public static GameObject buyPrompt, Auctionprompt, RentPrompt;
+    public GameObject[] Players;
+    //public static GameObject buyPrompt, Auctionprompt, RentPrompt;
+    //public Text PropertyDesc, RentDesc;
+    //public Button BuyBt, RentBt, AuctionBt;
+    public GameManager manager;
 
-    private void Awake()
+    private void Start()
     {
+        manager = GameObject.FindObjectOfType<GameManager>();
         //buyPrompt = GameObject.Find("buyPrompt");
         //buyPrompt.SetActive(false);
         //Auctionprompt = GameObject.Find("AuctionPrompt");
         //Auctionprompt.SetActive(false);
         //RentPrompt = GameObject.Find("RentPrompt");
         //RentPrompt.SetActive(false);
+        Players = manager.playerList;
+        
 
-
-        Players.Add(FindObjectOfType<Player>());
     }
 
 

@@ -7,8 +7,8 @@ public class Dice : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField] public bool hasLanded, thrown;
-    public PlayerMove currentPL;
-    public GameManager manager;
+    public Player currentPL;
+    GameManager manager;
 
     Vector3 initPosition;
 
@@ -24,10 +24,11 @@ public class Dice : MonoBehaviour
 
     private void Start()
     {
+        manager = GameObject.FindObjectOfType<GameManager>();
+        currentPL = manager.playerList[manager.currentPlayerIndex].GetComponent<Player>();
         rb = GetComponent<Rigidbody>();
         initPosition = transform.position;
         rb.useGravity = false;
-        currentPL = manager.playerList[manager.currentPlayerIndex];
     }
 
     public void OnClick()
@@ -90,7 +91,7 @@ public class Dice : MonoBehaviour
             {
                 diceValue = side.sideValue;
                 Debug.Log(diceValue + " has been rolled");
-                manager.playerList[manager.currentPlayerIndex].GetComponent<PlayerMove>().OnRoll();
+                manager.playerList[manager.currentPlayerIndex].GetComponent<Player>().OnRoll();
                 Reset();
             }
         }
